@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/myScript.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nike</title>
+</head>
+<body>
+	<header>
+		<div class="searchBar">
+ 	 		<p id="searchText">Search</p>
+ 	 		<img class="searchIcon"src="/assets/search-icon.png" alt="search-icon" width="20px" height="20px"> 
+ 			<input class="searchInput" type="text" name="search">
+  		</div>
+  		<a href="index.html"><img id="nikeLogo" src="/assets/nike-logo.png" alt="nike logo" align="left"></a>
+		<nav class="nav">
+			<div class="filter indexFilter">
+				<span class="menuBtn mb1"></span>
+				<span class="menuBtn mb2"></span>
+				<span class="menuBtn mb3"></span>
+			</div>
+			<div class="indexDropdown">
+				<ul class="dropdown-content">
+					<p></p>
+				</ul>
+			</div>
+			<ul class="navText">	
+  				<li><a class="link l1" href="product-page.html">MENS</a></li>
+  				<li><a class="link l2" href="product-page.html">WOMENS</a></li>
+  				<li><a class="link l3" href="product-page.html">KIDS</a></li>
+  				<li><a class="link l4" href="information-page.html">CONTACT</a></li>
+  				<li><a class="link" href="demo.html">DEMO</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="customerInfoBox">
+		<h1 class="checkoutText">DETAILS</h1>
+		<div id="customerInput">
+			<p>Full Name:</p>
+			<input class="custInputs" id="nameInput" type="text" name="name">
+			<p>Email Address:</p>
+			<input class="custInputs" id="emailInput" type="text" name="email-address">
+			<p>Address</p>
+			<input class="custInputs" id="addressInput1" type="text" name="address">
+			<p>city</p>
+			<input class="custInputs" id="cityInput" type="text" name="city">
+			<p>county</p>
+			<input class="custInputs" id="countyInput" type="text" name="county">
+			<p>country</p>
+			<input class="custInputs" id="countryInput" type="text" name="country">
+			<p>ZIP code</p>
+			<input class="custInputs" id="zipInput" type="text" name="ZIP">
+		</div>
+		<div id="paymentInput">
+			<p>Card number</p>
+			<input class="custInputs" id="cardInput" type="text" name="card-number">
+			<p>Name on card</p>
+			<input class="custInputs" id="cardNameInput" type="text" name="card-name">
+			<p>date</p>
+			<input class="custInputs" id="dateInput" type="text" name="card date">
+			<p>CSV</p>
+			<input class="custInputs" id="csvInput" type="text" name="csv">
+			<button id="submitButton">submit</button>
+		</div>
+	</section>
+	<section id="productListBox">
+		<h1 class="checkoutText">SUMMARY</h1>
+			<p class="sumText" id="name">NAME</p>
+			<p class="sumText" id="email">EMAIL</p>
+			<p class="sumText" id="address">ADDRESS</p>
+			<p class="sumText" id="city">CITY</p>
+			<p class="sumText" id="county">COUNTY</p>
+			<p class="sumText" id="country">COUNTRY</p>
+			<p class="sumText" id="zipCode">ZIPCODE</p>
+		<div class="productList">
+			<h1 class="checkoutText">PRODUCTS</h1>
+			<h1 class="productBrought"></h1>
+		</div>
+		<button class="payNowBtn">PAY NOW</button>
+	</section>
+
+	<footer class="checkoutFooter">
+		<ul class="footerText">
+		  	<li><a class="link l5" href="">CONTACT US</a></li>
+  			<li><a class="link l6" href="">SHIPPING</a></li>
+  			<li><a class="link l7" href="">RETURNS</a></li>
+  			<li><a class="link l8" href="">ABOUT US</a></li>
+		</ul>
+		<img id="nikeLogo" src="/assets/nike-logo.png" alt="nike logo" align="right">
+	</footer>
+</body>
+</html>

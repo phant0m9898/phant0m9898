@@ -1,0 +1,785 @@
+body {
+	background-color: #dddddd;
+	padding: 0;
+	margin: 0;
+	font-family: 'Archivo', sans-serif;
+}
+
+#nikeLogo {
+    margin-top: 0.7em;
+    margin-left: 0.7em;
+    width: 5em;
+    height: 2em;
+}
+.filter {
+    display: none;
+}
+.indexFilter {
+    margin-top: 0.7em;
+    position: relative;
+    text-align: center;
+}
+.indexDropdown {
+    position: absolute;
+    display: block;
+    margin-top: 2em;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100vw;
+  z-index: 1;
+}
+.nav{
+    background-color: #ffffff;
+    border:0.01em solid #ccc;
+    border-width:0.05em 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align: left;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    margin: 2em;
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
+.il1, .il2, .il3, .il4 {
+    font-size: 1em;
+    padding: 0;
+    border: none;
+    background: none;
+    margin-left: 4.3em;
+}
+.il1 {
+    margin-left: 2em;
+}
+.link {
+    text-align: left;
+}
+.link, #searchText {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
+.searchBar {
+    float: right;
+}
+.searchInput {
+    margin-top: 1em;
+    margin-right: 1em;
+    float: right;
+    border: solid;
+    border-radius: 0.3em;
+    padding: 0.2em
+}
+#searchText {
+    margin-top: 1.2em;
+    margin-right: 0.3em;
+    float: left;
+}
+.searchIcon {
+    margin-top: 1em;
+    margin-right: 0.5em;
+}
+#sliderVideo {
+    width: 100%;
+    height: 40.000em;
+    display: none;
+}
+.imgSlider {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#sliderImage {
+    position: relative;
+    text-align: center;
+}
+#welcomeText {
+    color: #ffffff;
+    position: absolute;
+    top: 1em;
+    left: 3em;
+}
+#sliderButtons {
+    position: absolute;
+    left: 50%;
+    bottom: 1em;
+    transform: translate(-50%, 0);
+}
+.sliderBtn {
+    float: left;
+    margin: 1em;
+    border: solid;
+    width: 1em;
+    height: 1.2em;
+    border-color: #ffffff;
+    background-color: #e8e8e8; 
+    border-radius: 1em;
+    transition: 0.3s;
+}
+.sliderBtn:hover {
+    border-color: #e8e8e8;
+    background-color: #b7b7b7; 
+}
+.sliderBtn:active {
+    border-color: #e8e8e8;
+    background-color: #707070; 
+}
+.showcaseText {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 15em 15em 15em;
+    grid-template-rows: 5em;
+    grid-column-gap: 7em;
+    margin-top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.st1, .st2, .st3 {
+    text-align: center;
+}
+.showcaseGrid {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 15em 15em 15em;
+    grid-template-rows: 7em 7em;
+    grid-column-gap: 7em;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-right: 2em;
+}
+.box {
+    border-color: #000000;
+    border: solid;
+    border-width: 0.1em;
+}
+.gridImage {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+.gridText {
+    position: absolute;
+}
+.gridBtn {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #000000;
+    border: none;
+    width: 5em;
+    height: 3em;
+    transform: translate(6.5em, 0);
+    margin-top: 2em;
+}
+.banner {
+    position: relative;
+}
+#bannerText {
+    left: 0.5em;
+    font-size: 2em;
+    color: #ffffff;
+    position: absolute;
+}
+.footer {
+    width: 100%;
+    height: 3em;
+    background-color: #ffffff;
+    text-align: left;
+    clear: both;
+    position: relative;
+    margin-top: -3em;
+}
+.footerText {
+    display: inline-flex;
+    list-style: none;
+}
+
+/*-----PRODUCT PAGE-----*/
+#productPage {
+    display: block;
+}
+.l1, .l2, .l3, .l4 {
+    font-size: 1em;
+    padding: 0;
+    border: none;
+    background: none;
+    margin-left: 4.3em;
+}
+.l1 {
+    margin-left: 2em;
+}
+.linkHeader {
+    margin-left: 5em;
+    margin-top: 0;
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+}
+.productHeader {
+    width: 100%;
+}
+.filter {
+    position: absolute;
+    background-color: #ffffff;
+    margin-left: 1em;
+    padding: 0.3em;
+    border: solid;
+    border-radius: 0.2em;
+    border-color: #ffffff;
+}
+#customText {
+    cursor: pointer;
+    position: relative;
+    float: left;
+    margin-top: 0;
+    position: absolute;
+    margin-left: 1em; 
+    border: solid;
+    border-radius: 1em;
+    padding: 0.2em;
+}
+
+#blackBtn {
+    color: #000000;
+    cursor: pointer;
+}
+#blueBtn {
+    color: #0200b2;
+    cursor: pointer;
+}
+#greenBtn {
+    color: #168207;
+    cursor: pointer;
+}
+#greyBtn {
+    color: #606060;
+    cursor: pointer;
+}
+#orangeBtn {
+    color: #c67400;
+    cursor: pointer;
+}
+#redBtn {
+    color: #8e0404;
+    cursor: pointer;
+}
+#whiteBtn {
+    color: #bababa;
+    cursor: pointer;
+}
+#closeText {
+    float: right;
+    font-weight: bold;
+    margin-right: 1em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#customizer {
+    display: none;
+    z-index: 999;
+    background: #ffffff;
+    position: absolute;
+    width: 41em;
+    height: 41em;
+    border: solid;
+    border-color: grey;
+    box-shadow: 5px 10px #888888;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.customizerItems {
+    margin-left: 1em;
+}
+.customImg {
+    float: left;
+    padding: 1em;
+    border:solid;
+}
+#colourList {
+   font-size: 1.5em;
+   font-weight: bold;
+   list-style: none;
+   position: relative;
+   float: left;
+}
+#customBuyBtn {
+    cursor: pointer;
+    position: absolute;
+    float: left;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid;
+    padding: 0.2em;
+    border-radius: 0.3em;
+}
+.menuBtn {
+    background-color: #000000;
+    display: block;
+    border: solid;
+    border-radius: 0.2em;
+    margin: 0.2em;
+    margin-top: 0;
+    width: 2em;
+    height: 0.1em;
+}
+.mb3 {
+    margin-bottom: 0;
+}
+#productName {
+    text-align: center;
+    margin-bottom: 3em;
+}
+.productGridRow1, .productGridRow2, .productGridRow3 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 7em 7em 7em;
+    grid-template-rows: 7em;
+    grid-column-gap: 4em;
+    grid-row-gap: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.textProductGridRow1, .textProductGridRow2, .textProductGridRow3 {
+    text-align: left;
+    display: inline-grid;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    grid-template-columns: 7em 7em 7em;
+    grid-template-rows: 3em;
+    grid-column-gap: 4em;
+    grid-row-gap: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8em;
+}
+.productGridRow2 {
+    position: absolute;
+    margin-top: 12em;
+}
+.textProductGridRow2 {
+    margin-top: 20em;
+}
+.productGridRow3 {
+    position: absolute;
+    margin-top: 25em;
+}
+.textProductGridRow3 {
+    margin-top: 34em;
+}
+.pBox1, .pBox2, .pBox3, .pBox4, .pBox5, .pBox6, .pBox7, .pBox8, .pBox9 {
+    border-color: #000000;
+    border: solid;
+    border-width: 0.1em;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.pText1, .pText2, .pText3, .pText4, .pText5, .pText6, .pText7, .pText8, .pText9 {
+    font-weight: bold;
+    font-size: 0.7em;
+}
+.l5, .l6, .l7, .l8 {
+    margin: 2em;
+    text-decoration: none;
+    font-weight: none;
+}
+.productFooter {
+    width: 100%;
+    height: 3em;
+    background-color: #ffffff;
+    text-align: left;
+    clear: both;
+    position: relative;
+    margin-top: 40em;
+}
+/* INFORMATION PAGE */
+#information-box {
+    position: relative;
+    margin: 2em;
+    border: solid;
+    border-color: #000000;
+    background-color: #ffffff;
+    width: 55%;
+    height: 500px;
+    float: left;
+}
+#information {
+    text-align: center;
+    font-weight: bold;
+}
+#index-box {
+    position: relative;
+    margin: 2em;
+    margin-left: 0;
+    border: solid;
+    border-color: #000000;
+    background-color: #ffffff;
+    width: 30%;
+    height: 500px;
+    float: right;
+}
+#info-list {
+    list-style: none;
+}
+.indexBtn {
+    margin-bottom: 2em;
+}
+.indexBtn1, .indexBtn2, .indexBtn3, .indexBtn4 {
+    top: 50%;
+    font-weight: bold;
+    padding: 0;
+    border: solid;
+    border-radius: 0.2em;
+    border-color: #d6d6d6;
+    padding: 0.3em;
+    background-color: #ffffff;
+}
+.indexBtn1:hover, .indexBtn2:hover, .indexBtn3:hover, .indexBtn4:hover {
+    background-color: #efefef;
+}
+.indexBtn1:active, .indexBtn2:active, .indexBtn3:active, .indexBtn4:active {
+    background-color: #d6d6d6;
+}
+/* CHECKOUT PAGE */
+#customerInfoBox {
+    position: relative;
+    margin: 2em;
+    border: solid;
+    border-color: #000000;
+    background-color: #ffffff;
+    width: 55%;
+    height: 700px;
+    float: left;
+}
+#customerInput {
+    margin-left: 1em;
+    float: left;
+}
+#paymentInput {
+    margin-right: 1em;
+    float: left;
+    margin-left: 5em;
+}
+#submitButton {
+    display: block;
+    margin-top: 1em;
+}
+.checkoutText {
+    margin-left: 1em;
+}
+.sumText {
+    margin-left: 2em;
+    font-weight: bold;
+}
+#productListBox {
+    position: relative;
+    margin: 2em;
+    margin-left: 0;
+    border: solid;
+    border-color: #000000;
+    background-color: #ffffff;
+    width: 30%;
+    height: 700px;
+    float: left;
+}
+#productList {
+    list-style: none;
+}
+.payNowBtn {
+    margin-top: 18em;
+    margin-right: 1em;
+    float: right;
+}
+.checkoutFooter {
+    width: 100%;
+    height: 3em;
+    background-color: #ffffff;
+    text-align: left;
+    clear: both;
+    position: absolute;
+    margin-top: 55em;
+}
+.productBrought {
+    margin-left: 1em;
+}
+/* PRODUCT VIEW PAGE */
+#productView {
+    position: relative;
+    border: solid;
+    background-color: #ffffff; 
+    width: 60em;
+    height: 50em;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3em;
+}
+.productViewItems {
+    margin-left: 2em;
+}
+.product {
+    height: 100%;
+}
+.productImg {
+    border: solid;
+    width: 30em;
+    height: 25em;
+}
+.pViewFooter {
+    margin-top: 10em;
+}
+#size {
+    position: relative;
+    width: 3.5em;
+    border: solid;
+    border-radius: 0.9em;
+    padding: 0.3em;
+    float: left;
+}
+#price {
+    float: left;
+    margin-left: 0.5em;
+    margin-top: 1.2em;
+}
+#buyBtn {
+    border: solid;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 12em;
+    width: 9em;
+    border-radius: 0.8em;
+    padding: 0.3em;
+    cursor: pointer;
+}
+#thank {
+    position: absolute;
+    margin-top: 3em;
+    margin-left: 3em;
+}
+/* MEDIA QUERIES*/
+/* large tablet */
+@media only screen and (max-width: 1060px) {
+    /* index page */
+    .link {
+        font-size: 0.6em;
+    }
+    #nikeLogo {
+        width: 3em;
+        height: 1em;
+    }
+    
+    .showcaseGrid {
+        grid-template-columns: 7em 7em 7em;
+        grid-template-rows: 3em;
+        grid-column-gap: 7em;
+        margin-top: 5em;
+        margin-bottom: 10em;
+    }
+    .showcaseText {
+        margin-top: 5em;
+        font-size: 0.7em;
+        grid-template-columns: 10em 10em 10em;
+        grid-template-rows: 3em;
+        grid-column-gap: 10em;
+    }
+    /* information page */
+    #information-box {
+        width: 25%;
+        height: 600px;
+    }
+    #information {
+        font-size: 0.7em;
+    }
+    #info-list {
+        padding-left: 0.1em;
+    }
+    .indexBtn {
+        font-size: 0.5em;
+    }
+    /* PRODUCT VIEW PAGE */
+    #productView {
+        width: 40em;
+        height: 40em;
+    }
+    .productName {
+        font-size: 0.7em;
+    }
+    #buyBtn {
+        font-size: 0.7em;
+        width: 8em;
+        height: 1em;
+    }
+    #thank {
+        font-size: 0.7em;
+        margin-top: 1.5em;
+    }
+    /* CHECKOUT PAGE */
+    #customerInfoBox {
+        width: 30%;
+    }
+    .checkoutText, p {
+        font-size: 0.5em;
+    }
+    .custInputs {
+        width: 4em;
+    }
+    #paymentInput {
+        margin-left: 1em;
+    }
+}
+/* tablet */
+@media only screen and (max-width: 1024px) and (min-width: 768px)   {
+  /* index page */
+  .footer {
+    margin-top: 5em;
+  }
+
+  /* product page */
+  #customText {
+    font-size: 1em;
+  }
+  /* information page */
+  #information-box {
+    width: 25%;
+  }
+  #information {
+    font-size: 0.7em;
+  }
+  /* PRODUCT VIEW PAGE */
+
+  /* CHECKOUT PAGE */
+  .pViewFooter {
+    margin-top: 15em;
+  }
+}
+/* mobile */
+@media only screen and (max-width : 568px) and (min-width : 312px) {
+    /* index page */
+    #welcomeText {
+        font-size: 0.8em;
+    }
+    .showcaseGrid {
+        grid-template-columns: 5em 5em 5em;
+        grid-template-rows: 3em;
+        grid-column-gap: 2em;
+        margin-top: 5em;
+        margin-bottom: 10em;
+    }
+    .showcaseText {
+        margin-top: 5em;
+        font-size: 0.7em;
+        grid-template-columns: 7em 7em 7em;
+        grid-template-rows: 2em;
+        grid-column-gap: 3em;
+    }
+    .searchBar {
+        display: none;
+    }
+    .navText {
+        display: none;
+    }
+    .nav {
+        padding-bottom: 4em;
+    }
+    .filter {
+        display: block;
+        margin-left: 50%;
+    }
+    .link {
+        font-size: 0.4em;
+    }
+    #banner {
+        margin-bottom: 2.5em;
+    }
+    #bannerText {
+        font-size: 0.6em;
+    }
+    #nikeLogo {
+        width: 2.5em;
+        height: 0.7em;
+    }
+    /* product page */
+    .nav {
+        padding-right: 6em;
+        width: 100%;
+    }
+    #customText {
+        margin-top: 5em;
+        font-size: 0.7em;
+    }
+    .linkHeader {
+        margin-left: 1em;
+    }
+    .productGridRow1, .productGridRow2, .productGridRow3 {
+        grid-template-columns: 3em 3em 3em;
+        grid-template-rows: 3em 3em 3em;
+    }
+    .textProductGridRow1, .textProductGridRow2, .textProductGridRow3 {
+        grid-template-columns: 3em 3em 3em;
+        grid-template-rows: 1em 1em 1em;
+    }
+    .textProductGridRow1 {
+        margin-top: 5;
+    }
+    .textProductGridRow2 {
+        margin-top: 10;
+    }
+    .textProductGridRow3 {
+        margin-top: 14;
+    }
+    #customizer {
+        width: 17em;
+        height: 25em;
+    }
+    .cBtn {
+        font-size: 0.5em;
+    }
+    #customBuyBtn {
+        margin-top: 10em;
+        font-size: 0.5em;
+    }
+    /* PRODUCT VIEW PAGE */
+    .productImg {
+        width: 10em;
+        height: 10em;
+    }
+    #productView {
+        width: 18em;
+        height: 25em;
+    }
+    .productName {
+        font-size: 0.7em;
+    }
+    #buyBtn {
+        font-size: 0.7em;
+        width: 8em;
+        height: 1em;
+    }
+    #thank {
+        font-size: 0.7em;
+        margin-top: 1.5em;
+    }
+    .footerText {
+        padding-left: 0;
+    }
+    /* CHECKOUT PAGE */
+    #payNowBtn {
+        font-size: 0.5em;
+    }
+}
